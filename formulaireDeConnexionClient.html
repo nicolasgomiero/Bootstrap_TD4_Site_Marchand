@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TD4 site marchand</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- inclure le CSS Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body class="container-fluid">
+    <section class="row justify-content-center">
+        <form method="post" class="shadow-lg p-3 mb-5 bg-white rounded">
+            <fieldset class="form-group">
+                <legend class="font-weight-bold">Inscription</legend>
+                <label for="nom" class="col-lg-12 col-form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" aria-describedby="nom" placeholder="Tapez votre nom" required>
+                <label for="prenom" class="col-lg-12 col-form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Tapez votre prénom" required>
+                <label for="date" class="col-lg-12 col-form-label">Date de naissane</label>
+                <input type="date" class="form-control" id="date" placeholder="Tapez votre date de naissance" required>
+                <label for="tel" class="col-lg-12 col-form-label">N° de téléphone</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Tapez votre numéro de téléphone" required pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}">
+                <label for="mail" class="col-lg-12 col-form-label">Email</label>
+                <input type="email" class="form-control" id="mail" placeholder="ex: id@domain.com" required>
+                <label for="password" class="col-lg-12 col-form-label">Mot de passe : </label>
+                <input type="password" class="form-control" minlength="8" maxlength="25" id="password" placeholder="Choisissez un mot de passe" required>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Souhaitez-vous recevoir la newsletter ?</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Valider</button>
+                <button type="reset" class="btn btn-primary">Annuler</button>
+            </fieldset>
+        </form>
+    </section>
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
